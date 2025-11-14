@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas - Counter-Strike 2</title>
+    <link rel="stylesheet" href="formatos.css">
+    <link rel="stylesheet" href="formatos-mapas.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="fundo-borrado"></div>
+        <div class="cont">
+            <!-- Navegação -->
+            <nav id="navbar">
+                <a href="index.html" class="logo-link">
+                    <img src="imagens/cs2logo.png" alt="Counter-Strike 2 Logo">
+                </a>
+
+                <!-- Botão Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="sobreojogo.html">Sobre o jogo</a>
+                    <a href="historia.html">História</a>
+                    <a href="mapas.html">Mapas</a>
+                    <a href="guia.html">Guia</a>
+                    <a href="torneios.html">Torneios</a>
+                </div>
+            </nav>
+
+            <div class="center">
+                <div id="meuCarrossel" class="carousel slide" data-ride="carousel" data-interval="4000">
+                    <!-- Indicadores -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#meuCarrossel" data-slide-to="0" class="active"></li>
+                        <li data-target="#meuCarrossel" data-slide-to="1"></li>
+                        <li data-target="#meuCarrossel" data-slide-to="2"></li>
+                        <li data-target="#meuCarrossel" data-slide-to="3"></li>
+                        <li data-target="#meuCarrossel" data-slide-to="4"></li>
+                        <li data-target="#meuCarrossel" data-slide-to="5"></li>
+                        <li data-target="#meuCarrossel" data-slide-to="6"></li>
+                        <li data-target="#meuCarrossel" data-slide-to="7"></li>
+                    </ol>
+
+                    <!-- Slides (apenas os 8 mapas) -->
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="imagens/mirage4.jpg" alt="Mirage">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Mirage</h5>
+                                <p>O mapa mais equilibrado do competitivo.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imagens/cs4.webp" alt="Inferno">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Inferno</h5>
+                                <p>Combates intensos e estratégicos em uma vila italiana.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imagens/nuke.jpeg" alt="Nuke">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nuke</h5>
+                                <p>Estratégia vertical em uma instalação nuclear.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imagens/anubis.jpg" alt="Anubis">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Anubis</h5>
+                                <p>Batalhas intensas entre templos e canais do Egito antigo.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imagens/overpass.webp" alt="Overpass">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Overpass</h5>
+                                <p>Controle de mapa e flancos em um cenário urbano de Berlim.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imagens/dust2.webp" alt="Dust II">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dust II</h5>
+                                <p>O mapa mais icônico da história do Counter-Strike.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imagens/ancient.jpg" alt="Ancient">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ancient</h5>
+                                <p>Disputas táticas em ruínas misteriosas e florestas densas.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imagens/vertigo.webp" alt="Vertigo">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Vertigo</h5>
+                                <p>Combates intensos em um arranha-céu em construção.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles -->
+                    <a class="carousel-control-prev" href="#meuCarrossel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#meuCarrossel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seção de Mapas -->
+    <div class="cont2">
+        <section class="mapas-section">
+            <h2 class="section-title">Todos os Mapas</h2>
+            <div class="navimg">
+                <a href="mirage.html" class="map-card">
+                    <img src="imagens/mirage4.jpg" alt="Mapa Mirage">
+                    <div class="map-overlay">
+                        <p class="map-name">Mirage</p>
+                        <span class="map-subtitle">Equilibrado</span>
+                    </div>
+                </a>
+
+                <a href="inferno.html" class="map-card">
+                    <img src="imagens/inferno.webp" alt="Mapa Inferno">
+                    <div class="map-overlay">
+                        <p class="map-name">Inferno</p>
+                        <span class="map-subtitle">Tático</span>
+                    </div>
+                </a>
+
+                <a href="nuke.html" class="map-card">
+                    <img src="imagens/nuke.jpeg" alt="Mapa Nuke">
+                    <div class="map-overlay">
+                        <p class="map-name">Nuke</p>
+                        <span class="map-subtitle">Estratégico</span>
+                    </div>
+                </a>
+
+                <a href="anubis.html" class="map-card">
+                    <img src="imagens/anubis.jpg" alt="Mapa Anubis">
+                    <div class="map-overlay">
+                        <p class="map-name">Anubis</p>
+                        <span class="map-subtitle">Moderno</span>
+                    </div>
+                </a>
+
+                <a href="overpass.html" class="map-card">
+                    <img src="imagens/overpass.webp" alt="Mapa Overpass">
+                    <div class="map-overlay">
+                        <p class="map-name">Overpass</p>
+                        <span class="map-subtitle">Urbano</span>
+                    </div>
+                </a>
+
+                <a href="dust2.html" class="map-card">
+                    <img src="imagens/dust2.webp" alt="Mapa Dust 2">
+                    <div class="map-overlay">
+                        <p class="map-name">Dust II</p>
+                        <span class="map-subtitle">Clássico</span>
+                    </div>
+                </a>
+
+                <a href="ancient.html" class="map-card">
+                    <img src="imagens/ancient.jpg" alt="Mapa Ancient">
+                    <div class="map-overlay">
+                        <p class="map-name">Ancient</p>
+                        <span class="map-subtitle">Histórico</span>
+                    </div>
+                </a>
+
+                <a href="vertigo.html" class="map-card">
+                    <img src="imagens/vertigo.webp" alt="Mapa Vertigo">
+                    <div class="map-overlay">
+                        <p class="map-name">Vertigo</p>
+                        <span class="map-subtitle">Vertical</span>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer class="cs2-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>CS<span>2</span> Zone</h2>
+                <p>O seu portal de tudo sobre Counter-Strike 2.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Guias</a></li>
+                    <li><a href="#">Mapas</a></li>
+                    <li><a href="#">Armas</a></li>
+                    <li><a href="#">Atualizações</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Twitch</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Autor</h3>
+                <p>Henrique Zoe Carvalho Hsu</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="menu-hamburger.js"></script>
+</body>
+
+</html>

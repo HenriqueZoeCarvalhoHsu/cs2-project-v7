@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Jogo - Counter-Strike 2</title>
+    <link rel="stylesheet" href="formatos.css">
+    <link rel="stylesheet" href="formatos-sobre.css">
+</head>
+
+<body>
+    <!-- Seção Hero com fundo -->
+    <div class="fundo">
+        <div class="fundo-borrado"></div>
+        <div class="cont">
+            <!-- Navegação com Menu Hamburger -->
+            <nav id="navbar">
+                <a href="index.html" class="logo-link">
+                    <img src="imagens/cs2logo.png" alt="Counter-Strike 2 Logo">
+                </a>
+
+                <!-- Botão Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="sobreojogo.html">Sobre o jogo</a>
+                    <a href="historia.html">História</a>
+                    <a href="mapas.html">Mapas</a>
+                    <a href="guia.html">Guia</a>
+                    <a href="torneios.html">Torneios</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Título Principal -->
+        <div class="center">
+            <h1>Sobre Counter-Strike 2</h1>
+            <p>Entenda a mecânica, regras e objetivos do jogo de tiro tático mais icônico do mundo</p>
+            <p class="hero-subtitle">De iniciante a especialista: tudo explicado</p>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="cont2">
+
+        <!-- O Que é CS2 -->
+        <section class="overview-section">
+            <div class="overview-card">
+                <h2>O Que É Counter-Strike 2?</h2>
+                <p>Counter-Strike 2 é um jogo de tiro tático em primeira pessoa desenvolvido pela Valve Corporation, lançado em setembro de 2023 como sucessor direto do CS:GO. Construído sobre a revolucionária Source 2 Engine, CS2 traz gráficos aprimorados, física realista e mecânicas refinadas que elevam a experiência competitiva a um novo patamar.</p>
+                <p>O jogo coloca duas equipes de cinco jogadores cada em confronto: Terroristas (TR) versus Contra-Terroristas (CT). Cada partida é dividida em rounds com duração de 1 minuto e 55 segundos, onde cada equipe tem objetivos específicos a cumprir. A precisão, estratégia e trabalho em equipe são essenciais para a vitória.</p>
+            </div>
+        </section>
+
+        <!-- Como Funciona -->
+        <section class="gameplay-section">
+            <h2 class="section-title">Como Funciona o Jogo</h2>
+
+            <!-- Modos de Jogo -->
+            <div class="gameplay-block">
+                <div class="block-header">
+                    
+                    <h3>Modos de Jogo Principais</h3>
+                </div>
+                <div class="block-content">
+                    <div class="mode-grid">
+                        <div class="mode-card">
+                            <h4>Competitivo (5v5)</h4>
+                            <p class="mode-format">MR12 - Melhor de 24 rounds</p>
+                            <p>O modo principal e mais popular. Duas equipes se enfrentam em uma série de rounds, alternando entre ataque (TR) e defesa (CT). O primeiro time a vencer 13 rounds ganha a partida. A cada 12 rounds, os times trocam de lado.</p>
+                        </div>
+
+                        <div class="mode-card">
+                            <h4>Premier</h4>
+                            <p class="mode-format">Sistema de Rating CS</p>
+                            <p>Versão competitiva com sistema de classificação avançado. Jogadores são ranqueados por um rating numérico que reflete sua habilidade real, com pick/ban de mapas antes de cada partida.</p>
+                        </div>
+
+                        <div class="mode-card">
+                            <h4>Casual</h4>
+                            <p class="mode-format">10v10 - Sem pressão</p>
+                            <p>Versão relaxada do competitivo com times maiores e regras mais flexíveis. Ideal para iniciantes aprenderem os mapas e mecânicas sem a pressão do ranked.</p>
+                        </div>
+
+                        <div class="mode-card">
+                            <h4>Deathmatch</h4>
+                            <p class="mode-format">FFA - Treino de Aim</p>
+                            <p>Modo livre para todos focado em aprimorar a mira. Respawn instantâneo, todas as armas disponíveis e sem objetivos além de eliminar adversários.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objetivos das Equipes -->
+            <div class="gameplay-block">
+                <div class="block-header">
+                    
+                    <h3>Objetivos das Equipes</h3>
+                </div>
+                <div class="block-content">
+                    <div class="teams-container">
+                        <div class="team-objectives tr-team">
+                            <div class="team-badge">
+                                
+                                <h4>Terroristas (TR)</h4>
+                            </div>
+                            <ul class="objectives-list">
+                                <li>
+                                    <strong>Objetivo Principal:</strong> Plantar a bomba C4 em um dos sites (A ou B) e defendê-la até explodir
+                                </li>
+                                <li>
+                                    <strong>Objetivo Alternativo:</strong> Eliminar todos os Contra-Terroristas antes que o tempo acabe
+                                </li>
+                                <li>
+                                    <strong>Tempo para Plantar:</strong> 1 minuto e 55 segundos
+                                </li>
+                                <li>
+                                    <strong>Tempo de Explosão:</strong> 40 segundos após o plantio
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="team-objectives ct-team">
+                            <div class="team-badge">
+                                
+                                <h4>Contra-Terroristas (CT)</h4>
+                            </div>
+                            <ul class="objectives-list">
+                                <li>
+                                    <strong>Objetivo Principal:</strong> Impedir o plantio da bomba defendendo os sites A e B
+                                </li>
+                                <li>
+                                    <strong>Objetivo Alternativo:</strong> Desarmar a bomba caso seja plantada (kit reduz tempo de 10s para 5s)
+                                </li>
+                                <li>
+                                    <strong>Objetivo Terceiro:</strong> Eliminar todos os Terroristas
+                                </li>
+                                <li>
+                                    <strong>Vantagem:</strong> Posições defensivas estabelecidas no início do round
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sistema de Rounds -->
+            <div class="gameplay-block">
+                <div class="block-header">
+                    
+                    <h3>Sistema de Rounds e Vitória</h3>
+                </div>
+                <div class="block-content">
+                    <div class="rounds-info">
+                        <div class="round-item">
+                            <div class="round-number">13</div>
+                            <p>Rounds necessários para vencer a partida (de 24 possíveis)</p>
+                        </div>
+                        <div class="round-item">
+                            <div class="round-number">12</div>
+                            <p>Rounds jogados antes da troca de lado (halftime)</p>
+                        </div>
+                        <div class="round-item">
+                            <div class="round-number">1:55</div>
+                            <p>Duração máxima de cada round em minutos</p>
+                        </div>
+                        <div class="round-item">
+                            <div class="round-number">40s</div>
+                            <p>Tempo até a bomba explodir após o plantio</p>
+                        </div>
+                    </div>
+
+                    <div class="victory-conditions">
+                        <h4>Condições de Vitória no Round:</h4>
+                        <div class="conditions-grid">
+                            <div class="condition-item tr-bg">
+                                
+                                <p><strong>TR vence se:</strong> A bomba explodir OU todos os CT morrerem</p>
+                            </div>
+                            <div class="condition-item ct-bg">
+                                
+                                <p><strong>CT vence se:</strong> Bomba for desarmada OU todos os TR morrerem OU tempo acabar sem plantio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sistema de Economia -->
+        <section class="economy-section">
+            <h2 class="section-title">Sistema de Economia</h2>
+            
+            <div class="economy-intro">
+                <p>O gerenciamento de dinheiro é um dos pilares estratégicos mais importantes do CS2. Cada jogador começa com $800 e recebe dinheiro adicional com base em suas ações e no resultado de cada round. Saber quando economizar ou gastar pode decidir partidas inteiras.</p>
+            </div>
+
+            <div class="economy-grid">
+                <div class="economy-card">
+                    <h3> Como Ganhar Dinheiro</h3>
+                    <ul>
+                        <li><strong>Vitória no Round (TR):</strong> $3250 (com bomba plantada) ou $2700 (sem plantio)</li>
+                        <li><strong>Vitória no Round (CT):</strong> $3250</li>
+                        <li><strong>Derrota no Round:</strong> $1400 - $3400 (aumenta com derrotas consecutivas)</li>
+                        <li><strong>Eliminação:</strong> $300 (armas normais) ou $900 (AWP)</li>
+                        <li><strong>Desarme de Bomba:</strong> $300 bonus para o desarmador</li>
+                    </ul>
+                </div>
+
+                <div class="economy-card">
+                    <h3>🛒 Principais Custos</h3>
+                    <ul>
+                        <li><strong>AK-47:</strong> $2700</li>
+                        <li><strong>M4A4:</strong> $3100 | <strong>M4A1-S:</strong> $2900</li>
+                        <li><strong>AWP:</strong> $4750</li>
+                        <li><strong>Colete:</strong> $650 | <strong>Colete + Capacete:</strong> $1000</li>
+                        <li><strong>Kit de Desarme:</strong> $400 (apenas CT)</li>
+                        <li><strong>Granadas:</strong> $200 - $600 cada</li>
+                    </ul>
+                </div>
+
+                <div class="economy-card">
+                    <h3>📊 Estratégias Econômicas</h3>
+                    <ul>
+                        <li><strong>Full Buy:</strong> Todos compram equipamento completo ($4000+)</li>
+                        <li><strong>Eco Round:</strong> Time não compra nada para economizar para próximo round</li>
+                        <li><strong>Force Buy:</strong> Time gasta todo dinheiro mesmo sem ter para full buy</li>
+                        <li><strong>Half Buy:</strong> Compras médias (SMGs, pistolas melhores)</li>
+                        <li><strong>Quebrar Economia:</strong> Fazer damage econômico ao adversário</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Por Que Jogar CS2 -->
+        <section class="why-section">
+            <h2 class="section-title">Por Que Jogar Counter-Strike 2?</h2>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    
+                    <h3>Competitivo e Recompensador</h3>
+                    <p>CS2 recompensa habilidade pura. Não há pay-to-win, vantagens injustas ou elementos de sorte. Sua performance depende exclusivamente de prática, estratégia e teamwork.</p>
+                </div>
+
+                <div class="why-card">
+                    
+                    <h3>Comunidade Global</h3>
+                    <p>Milhões de jogadores ativos em todo mundo, torneios profissionais com milhões de dólares em premiação e uma cena esportiva consolidada há mais de duas décadas.</p>
+                </div>
+
+                <div class="why-card">
+                    
+                    <h3>Alta Curva de Aprendizado</h3>
+                    <p>Fácil de aprender, impossível de dominar. Sempre há algo novo para aprender, seja um smoke novo, uma jogada tática ou refinamento de mecânicas básicas.</p>
+                </div>
+
+                <div class="why-card">
+                    
+                    <h3>Trabalho em Equipe</h3>
+                    <p>CS2 exige coordenação e comunicação constante. Fazer amizades, montar times e evoluir juntos é parte essencial da experiência.</p>
+                </div>
+
+                <div class="why-card">
+                    
+                    <h3>Sistema de Skins</h3>
+                    <p>Personalize suas armas com skins que vão desde simples até extremamente raras e valiosas. O mercado de skins do CS2 é um dos mais desenvolvidos dos games.</p>
+                </div>
+
+                <div class="why-card">
+                    
+                    <h3>Source 2 Engine</h3>
+                    <p>Gráficos modernos, física realista, fumaças volumétricas dinâmicas e performance otimizada. CS2 traz o clássico para uma nova era tecnológica.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="cs2-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>CS<span>2</span> Zone</h2>
+                <p>O seu portal de tudo sobre Counter-Strike 2.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Guias</a></li>
+                    <li><a href="#">Mapas</a></li>
+                    <li><a href="#">Armas</a></li>
+                    <li><a href="#">Atualizações</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Twitch</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Autor</h3>
+                <p>Henrique Zoe Carvalho Hsu</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="menu-hamburger.js" defer></script>
+
+</body>
+
+</html>

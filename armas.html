@@ -1,0 +1,530 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armas - Counter-Strike 2</title>
+        <link rel="stylesheet" href="formatos.css">
+        <link rel="stylesheet" href="formatos-armas.css">
+    </head>
+
+    <body>
+        <!-- Seção Hero com fundo -->
+        <div class="fundo">
+            <div class="fundo-borrado"></div>
+            <div class="cont">
+                <!-- Navegação com Menu Hamburger -->
+                <nav id="navbar">
+                    <a href="index.html" class="logo-link">
+                        <img src="imagens/cs2logo.png" alt="Counter-Strike 2 Logo">
+                    </a>
+
+                    <!-- Botão Hamburger -->
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="nav-links" id="navLinks">
+                        <a href="sobreojogo.html">Sobre o jogo</a>
+                        <a href="historia.html">História</a>
+                        <a href="mapas.html">Mapas</a>
+                        <a href="guia.html">Guia</a>
+                        <a href="torneios.html">Torneios</a>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Título Principal -->
+            <div class="center">
+                <h1>Arsenal Completo</h1>
+                <p>Conheça todas as armas disponíveis em Counter-Strike 2, suas características e valores</p>
+                <p class="hero-subtitle">Escolha sua categoria e descubra a arma perfeita para seu estilo de jogo</p>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal - Arsenal -->
+        <div class="cont2">
+            <section class="arsenal-section">
+
+                <!-- Container Principal -->
+                <div class="arsenal-container">
+
+                    <!-- Painel de Categorias e Armas -->
+                    <div class="weapons-panel">
+
+                        <!-- Header com Dinheiro -->
+                        <div class="money-display">
+                            <span class="money-amount">$16000</span>
+                            <span class="money-label">Dinheiro Disponível</span>
+                        </div>
+
+                        <!-- Abas de Categorias -->
+                        <div class="weapon-tabs">
+                            <button class="tab-btn active" data-category="utilitarios">
+                                <span class="tab-number">1</span>
+                                Utilitários
+                            </button>
+                            <button class="tab-btn" data-category="pistolas">
+                                <span class="tab-number">2</span>
+                                Pistolas
+                            </button>
+                            <button class="tab-btn" data-category="intermediarias">
+                                <span class="tab-number">3</span>
+                                Intermediárias
+                            </button>
+                            <button class="tab-btn" data-category="rifles">
+                                <span class="tab-number">4</span>
+                                Rifles
+                            </button>
+                            <button class="tab-btn" data-category="pesadas">
+                                <span class="tab-number">5</span>
+                                Pesadas
+                            </button>
+                        </div>
+
+                        <!-- Grid de Armas - UTILITÁRIOS -->
+                        <div class="weapons-grid active" data-category="utilitarios">
+                            <div class="weapon-card" data-weapon="zeus">
+                                <div class="weapon-slot">1</div>
+                                <img src="imagens/armas/zeus.jpg" alt="Zeus x27" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Zeus x27</p>
+                                    <p class="weapon-price">$200</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="defuse">
+                                <div class="weapon-slot">2</div>
+                                <img src="imagens/armas/defuse.jpg" alt="Kit de Desarme" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Kit de Desarme</p>
+                                    <p class="weapon-price">$400</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="kevlar">
+                                <div class="weapon-slot">3</div>
+                                <img src="imagens/armas/colete.jpg" alt="Colete" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Colete</p>
+                                    <p class="weapon-price">$650</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="helmet">
+                                <div class="weapon-slot">4</div>
+                                <img src="imagens/armas/colete+capacete.jpg" alt="Colete + Capacete" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Colete + Capacete</p>
+                                    <p class="weapon-price">$1000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Grid de Armas - PISTOLAS -->
+                        <div class="weapons-grid" data-category="pistolas">
+                            <div class="weapon-card" data-weapon="usp">
+                                <div class="weapon-slot">1</div>
+                                <img src="imagens/armas/usp.jpg" alt="USP-S" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">USP-S</p>
+                                    <p class="weapon-price">$200</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="p2000">
+                                <div class="weapon-slot">1</div>
+                                <img src="imagens/armas/p2000.jpg" alt="P2000" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">P2000</p>
+                                    <p class="weapon-price">$200</p>
+                                </div>
+                            </div>
+                            <div class="weapon-card" data-weapon="glock">
+                                <div class="weapon-slot">1</div>
+                                <img src="imagens/armas/glock-18.jpg" alt="Glock-18" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Glock-18</p>
+                                    <p class="weapon-price">$200</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="p250">
+                                <div class="weapon-slot">2</div>
+                                <img src="imagens/armas/p250.jpg" alt="P250" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">P250</p>
+                                    <p class="weapon-price">$300</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="fiveseven">
+                                <div class="weapon-slot">3</div>
+                                <img src="imagens/armas/five-seven.jpg" alt="Five-SeveN" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Five-SeveN</p>
+                                    <p class="weapon-price">$500</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="tec9">
+                                <div class="weapon-slot">3</div>
+                                <img src="imagens/armas/tec9.jpg" alt="Tec-9" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Tec-9</p>
+                                    <p class="weapon-price">$500</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="cz75">
+                                <div class="weapon-slot">4</div>
+                                <img src="imagens/armas/cz.jpg" alt="CZ75-Auto" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">CZ75-Auto</p>
+                                    <p class="weapon-price">$500</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="deagle">
+                                <div class="weapon-slot">5</div>
+                                <img src="imagens/armas/deagle.jpg" alt="Desert Eagle" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Desert Eagle</p>
+                                    <p class="weapon-price">$700</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="revolver">
+                                <div class="weapon-slot">5</div>
+                                <img src="imagens/armas/revolver.jpg" alt="R8 Revolver" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">R8 Revolver</p>
+                                    <p class="weapon-price">$600</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Grid de Armas - INTERMEDIÁRIAS -->
+                        <div class="weapons-grid" data-category="intermediarias">
+                            <div class="weapon-card" data-weapon="mac10">
+                                <div class="weapon-slot">1</div>
+                                <img src="imagens/armas/mac-10.jpg" alt="MAC-10" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">MAC-10</p>
+                                    <p class="weapon-price">$1050</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="mp9">
+                                <div class="weapon-slot">1</div>
+                                <img src="imagens/armas/mp9.jpg" alt="MP9" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">MP9</p>
+                                    <p class="weapon-price">$1250</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="mp7">
+                                <div class="weapon-slot">2</div>
+                                <img src="imagens/armas/mp7.jpg" alt="MP7" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">MP7</p>
+                                    <p class="weapon-price">$1500</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="mp5">
+                                <div class="weapon-slot">3</div>
+                                <img src="imagens/armas/mp5.jpg" alt="MP5-SD" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">MP5-SD</p>
+                                    <p class="weapon-price">$1500</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="ump">
+                                <div class="weapon-slot">4</div>
+                                <img src="imagens/armas/ump.jpg" alt="UMP-45" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">UMP-45</p>
+                                    <p class="weapon-price">$1200</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="p90">
+                                <div class="weapon-slot">5</div>
+                                <img src="imagens/armas/p90.jpg" alt="P90" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">P90</p>
+                                    <p class="weapon-price">$2350</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="bizon">
+                                <div class="weapon-slot">6</div>
+                                <img src="imagens/armas/ppbizon.jpg" alt="PP-Bizon" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">PP-Bizon</p>
+                                    <p class="weapon-price">$1400</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Grid de Armas - RIFLES -->
+                        <div class="weapons-grid" data-category="rifles">
+                            <div class="weapon-card" data-weapon="famas">
+                                <div class="weapon-slot">1</div>
+                                <img src="imagens/armas/famas.jpg" alt="FAMAS" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">FAMAS</p>
+                                    <p class="weapon-price">$2050</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="galil">
+                                <div class="weapon-slot">1</div>
+                                <img src="imagens/armas/galil.jpg" alt="Galil AR" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Galil AR</p>
+                                    <p class="weapon-price">$1800</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="m4a4">
+                                <div class="weapon-slot">2</div>
+                                <img src="imagens/armas/m4a4.jpg" alt="M4A4" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">M4A4</p>
+                                    <p class="weapon-price">$3100</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="m4a1s">
+                                <div class="weapon-slot">2</div>
+                                <img src="imagens/armas/m4as.jpg" alt="M4A1-S" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">M4A1-S</p>
+                                    <p class="weapon-price">$2900</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="ak47">
+                                <div class="weapon-slot">3</div>
+                                <img src="imagens/armas/ak-47.jpg" alt="AK-47" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">AK-47</p>
+                                    <p class="weapon-price">$2700</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="sg553">
+                                <div class="weapon-slot">4</div>
+                                <img src="imagens/armas/sg.jpg" alt="SG 553" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">SG 553</p>
+                                    <p class="weapon-price">$3000</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="aug">
+                                <div class="weapon-slot">4</div>
+                                <img src="imagens/armas/aug.jpg" alt="AUG" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">AUG</p>
+                                    <p class="weapon-price">$3300</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="awp">
+                                <div class="weapon-slot">5</div>
+                                <img src="imagens/armas/awp.jpg" alt="AWP" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">AWP</p>
+                                    <p class="weapon-price">$4750</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="ssg08">
+                                <div class="weapon-slot">6</div>
+                                <img src="imagens/armas/ssg.jpg" alt="SSG 08" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">SSG 08</p>
+                                    <p class="weapon-price">$1700</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Grid de Armas - PESADAS -->
+                        <div class="weapons-grid" data-category="pesadas">
+                            <div class="weapon-card" data-weapon="nova">
+                                <div class="weapon-slot">1</div>
+                                <img src="imagens/armas/nova.jpg" alt="Nova" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Nova</p>
+                                    <p class="weapon-price">$1050</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="xm1014">
+                                <div class="weapon-slot">2</div>
+                                <img src="imagens/armas/xm.jpg" alt="XM1014" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">XM1014</p>
+                                    <p class="weapon-price">$2000</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="mag7">
+                                <div class="weapon-slot">3</div>
+                                <img src="imagens/armas/mag-7.jpg" alt="MAG-7" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">MAG-7</p>
+                                    <p class="weapon-price">$1300</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="sawedoff">
+                                <div class="weapon-slot">3</div>
+                                <img src="imagens/armas/cano-curto.jpg" alt="Sawed-Off" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Sawed-Off</p>
+                                    <p class="weapon-price">$1100</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="m249">
+                                <div class="weapon-slot">4</div>
+                                <img src="imagens/armas/m249.jpg" alt="M249" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">M249</p>
+                                    <p class="weapon-price">$5200</p>
+                                </div>
+                            </div>
+
+                            <div class="weapon-card" data-weapon="negev">
+                                <div class="weapon-slot">5</div>
+                                <img src="imagens/armas/negev.jpg" alt="Negev" class="weapon-img">
+                                <div class="weapon-info">
+                                    <p class="weapon-name">Negev</p>
+                                    <p class="weapon-price">$1700</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Painel de Detalhes da Arma -->
+                    <div class="weapon-details-panel">
+                        <div class="details-placeholder">
+                            <div class="placeholder-icon"></div>
+                            <h3>Selecione uma arma</h3>
+                            <p>Clique em qualquer arma ao lado para ver informações detalhadas</p>
+                        </div>
+
+                        <div class="weapon-details-content" style="display: none;">
+                            <div class="details-header">
+                                <img src="imagens/armas/ak-47.jpg" alt="" class="details-weapon-img" id="detailsWeaponImg">
+                                <div class="details-title-group">
+                                    <h2 id="detailsWeaponName">Nome da Arma</h2>
+                                    <span class="details-price" id="detailsWeaponPrice">$0</span>
+                                </div>
+                            </div>
+
+                            <div class="details-team">
+                                <h3>Disponível para:</h3>
+                                <div class="team-badges">
+                                    <span class="team-badge ct" id="teamCT">CT</span>
+                                    <span class="team-badge tr" id="teamTR">TR</span>
+                                </div>
+                            </div>
+
+                            <div class="details-stats">
+                                <h3>Estatísticas</h3>
+                                <div class="stat-item">
+                                    <span class="stat-label">Dano:</span>
+                                    <div class="stat-bar">
+                                        <div class="stat-fill" id="statDamage"></div>
+                                    </div>
+                                    <span class="stat-value" id="statDamageValue">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Precisão:</span>
+                                    <div class="stat-bar">
+                                        <div class="stat-fill" id="statAccuracy"></div>
+                                    </div>
+                                    <span class="stat-value" id="statAccuracyValue">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Cadência:</span>
+                                    <div class="stat-bar">
+                                        <div class="stat-fill" id="statFireRate"></div>
+                                    </div>
+                                    <span class="stat-value" id="statFireRateValue">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Mobilidade:</span>
+                                    <div class="stat-bar">
+                                        <div class="stat-fill" id="statMobility"></div>
+                                    </div>
+                                    <span class="stat-value" id="statMobilityValue">0</span>
+                                </div>
+                            </div>
+
+                            <div class="details-description">
+                                <h3>Descrição</h3>
+                                <p id="detailsDescription">Descrição da arma...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="cs2-footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h2>CS<span>2</span> Zone</h2>
+                    <p>O seu portal de tudo sobre Counter-Strike 2.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Guias</a></li>
+                        <li><a href="#">Mapas</a></li>
+                        <li><a href="#">Armas</a></li>
+                        <li><a href="#">Atualizações</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Twitch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Autor</h3>
+                    <p>Henrique Zoe Carvalho Hsu</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="script.js" defer></script>
+        <script src="menu-hamburger.js" defer></script>
+        <script src="armas.js" defer></script>
+
+    </body>
+
+    </html>

@@ -1,0 +1,586 @@
+/* =========================================
+   PÁGINA DE TORNEIOS - ESTILOS ESPECÍFICOS
+========================================= */
+
+.hero-subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 10px;
+}
+
+/* =========================================
+   SEÇÃO DE INTRODUÇÃO
+========================================= */
+.intro-section {
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 80px;
+}
+
+.intro-card {
+    background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.95));
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 155, 1, 0.15);
+    text-align: center;
+}
+
+.intro-icon {
+    font-size: 72px;
+    margin-bottom: 25px;
+    display: inline-block;
+    animation: rotate 3s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+.intro-card h2 {
+    font-size: 42px;
+    font-family: 'cs2v1', sans-serif;
+    color: #FF9B01;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 15px rgba(255, 155, 1, 0.4);
+}
+
+.intro-card p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   SEÇÃO DE TORNEIOS
+========================================= */
+.tournaments-section {
+    width: 90%;
+    max-width: 1400px;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    color: #FF9B01;
+    font-family: 'cs2v1', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+    text-shadow: 0 2px 15px rgba(255, 155, 1, 0.4);
+}
+
+.tournaments-grid {
+    display: grid;
+    gap: 30px;
+}
+
+/* Cards de Torneio */
+.tournament-card {
+    background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.95));
+    border: 2px solid;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.major-tier {
+    border-color: rgba(255, 215, 0, 0.5);
+}
+
+.premier-tier {
+    border-color: rgba(192, 192, 192, 0.5);
+}
+
+.regional-tier {
+    border-color: rgba(205, 127, 50, 0.5);
+}
+
+.tournament-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(255, 155, 1, 0.3);
+}
+
+.major-tier:hover {
+    border-color: rgba(255, 215, 0, 1);
+    box-shadow: 0 20px 60px rgba(255, 215, 0, 0.4);
+}
+
+.premier-tier:hover {
+    border-color: rgba(192, 192, 192, 1);
+    box-shadow: 0 20px 60px rgba(192, 192, 192, 0.4);
+}
+
+.regional-tier:hover {
+    border-color: rgba(205, 127, 50, 1);
+    box-shadow: 0 20px 60px rgba(205, 127, 50, 0.4);
+}
+
+/* Badge do Torneio */
+.tournament-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.major-tier .tournament-badge {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 193, 7, 0.2));
+    border: 2px solid rgba(255, 215, 0, 0.6);
+    color: #FFD700;
+}
+
+.premier-tier .tournament-badge {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.3), rgba(169, 169, 169, 0.2));
+    border: 2px solid rgba(192, 192, 192, 0.6);
+    color: #C0C0C0;
+}
+
+.regional-tier .tournament-badge {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.3), rgba(184, 115, 51, 0.2));
+    border: 2px solid rgba(205, 127, 50, 0.6);
+    color: #CD7F32;
+}
+
+.badge-icon {
+    font-size: 18px;
+}
+
+.badge-text {
+    font-family: 'cs2v1', sans-serif;
+}
+
+/* Header do Card */
+.tournament-header {
+    padding: 40px 40px 30px;
+    border-bottom: 2px solid rgba(255, 155, 1, 0.1);
+}
+
+.tournament-header h3 {
+    font-size: 32px;
+    font-family: 'cs2v1', sans-serif;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(255, 155, 1, 0.5), 0 0 40px rgba(255, 155, 1, 0.3);
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tournament-organizer {
+    font-size: 14px;
+    color: rgba(255, 155, 1, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Informações do Torneio */
+.tournament-info {
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 2px solid rgba(255, 155, 1, 0.1);
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.info-value {
+    font-size: 16px;
+    color: #FF9B01;
+    font-weight: 700;
+    font-family: 'cs2v1', sans-serif;
+}
+
+/* Descrição do Torneio */
+.tournament-description {
+    padding: 30px 40px;
+}
+
+.tournament-description p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+.tournament-description p:last-child {
+    margin-bottom: 0;
+}
+
+.tournament-description strong {
+    color: #FF9B01;
+    font-weight: 700;
+}
+
+/* =========================================
+   SEÇÃO DE EQUIPES
+========================================= */
+.teams-section {
+    width: 90%;
+    max-width: 1400px;
+    margin-bottom: 80px;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* Card de Equipe */
+.team-card {
+    background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.95));
+    border: 2px solid rgba(255, 155, 1, 0.2);
+    border-radius: 20px;
+    padding: 35px;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.team-card:hover {
+    border-color: #FF9B01;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(255, 155, 1, 0.3);
+}
+
+.team-logo {
+    text-shadow: #FF9B01;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(255, 155, 1, 0.5), 0 0 40px rgba(255, 155, 1, 0.3);
+    font-size: 72px;
+    margin-bottom: 20px;
+    display: inline-block;
+    filter: drop-shadow(0 5px 15px rgba(255, 155, 1, 0.3));
+}
+
+.team-card h3 {
+    font-size: 28px;
+    font-family: 'cs2v1', sans-serif;
+    color: #FF9B01;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-country {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+}
+
+/* Conquistas da Equipe */
+.team-achievements {
+    background: rgba(255, 155, 1, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.team-achievements p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 12px;
+}
+
+.team-achievements p:last-child {
+    margin-bottom: 0;
+}
+
+.team-achievements strong {
+    color: #FF9B01;
+    font-weight: 700;
+}
+
+/* Descrição da Equipe */
+.team-description {
+    text-align: left;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-description p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* =========================================
+   SEÇÃO COMO ASSISTIR
+========================================= */
+.watch-section {
+    width: 90%;
+    max-width: 1400px;
+    margin-bottom: 60px;
+}
+
+.watch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.watch-card {
+    background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.95));
+    border: 2px solid rgba(255, 155, 1, 0.2);
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.watch-card:hover {
+    border-color: #FF9B01;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(255, 155, 1, 0.3);
+}
+
+.watch-icon {
+    font-size: 56px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.watch-card h3 {
+    font-size: 26px;
+    font-family: 'cs2v1', sans-serif;
+    color: #FF9B01;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.watch-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 20px 0;
+}
+
+.watch-note {
+    font-size: 12px;
+    color: rgba(255, 155, 1, 0.6);
+    font-style: italic;
+}
+
+.watch-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, rgba(255, 155, 1, 0.15), rgba(255, 193, 7, 0.1));
+    border: 2px solid rgba(255, 155, 1, 0.3);
+    border-radius: 50px;
+    color: #FF9B01;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.watch-link:hover {
+    background: linear-gradient(135deg, rgba(255, 155, 1, 0.25), rgba(255, 193, 7, 0.2));
+    border-color: #FF9B01;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 155, 1, 0.3);
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+@media screen and (max-width: 1024px) {
+    .intro-card {
+        padding: 40px 30px;
+    }
+
+    .intro-icon {
+        font-size: 64px;
+    }
+
+    .intro-card h2 {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .tournament-header {
+        padding: 35px 30px 25px;
+    }
+
+    .tournament-info,
+    .tournament-description {
+        padding: 25px 30px;
+    }
+
+    .teams-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-card {
+        padding: 30px 25px;
+    }
+
+    .intro-icon {
+        font-size: 56px;
+    }
+
+    .intro-card h2 {
+        font-size: 32px;
+    }
+
+    .intro-card p {
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .tournament-badge {
+        top: 15px;
+        right: 15px;
+        padding: 8px 15px;
+        font-size: 11px;
+    }
+
+    .badge-icon {
+        font-size: 16px;
+    }
+
+    .tournament-header {
+        padding: 30px 25px 20px;
+    }
+
+    .tournament-header h3 {
+        font-size: 28px;
+    }
+
+    .tournament-info,
+    .tournament-description {
+        padding: 20px 25px;
+    }
+
+    .teams-grid,
+    .watch-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card,
+    .watch-card {
+        padding: 30px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro-card {
+        padding: 25px 20px;
+    }
+
+    .intro-icon {
+        font-size: 48px;
+    }
+
+    .intro-card h2 {
+        font-size: 28px;
+    }
+
+    .intro-card p {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .tournament-badge {
+        position: static;
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+
+    .tournament-header {
+        padding: 25px 20px 20px;
+    }
+
+    .tournament-header h3 {
+        font-size: 24px;
+    }
+
+    .tournament-organizer {
+        font-size: 12px;
+    }
+
+    .tournament-info,
+    .tournament-description {
+        padding: 20px;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .team-card,
+    .watch-card {
+        padding: 25px 20px;
+    }
+
+    .team-logo,
+    .watch-icon {
+        font-size: 56px;
+    }
+
+    .team-card h3,
+    .watch-card h3 {
+        font-size: 24px;
+    }
+}

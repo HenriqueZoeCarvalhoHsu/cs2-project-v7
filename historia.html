@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História - Counter-Strike</title>
+    <link rel="stylesheet" href="formatos.css">
+    <link rel="stylesheet" href="formatos-historia.css">
+</head>
+
+<body>
+    <div class="fundo historia-fundo">
+        <div class="fundo-borrado"></div>
+        <div class="cont">
+            <!-- Navegação -->
+            <nav id="navbar">
+                <a href="index.html" class="logo-link">
+                    <img src="imagens/cs2logo.png" alt="Counter-Strike 2 Logo">
+                </a>
+
+                <!-- Botão Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="sobreojogo.html">Sobre o jogo</a>
+                    <a href="historia.html">História</a>
+                    <a href="mapas.html">Mapas</a>
+                    <a href="guia.html">Guia</a>
+                    <a href="torneios.html">Torneios</a>
+                </div>
+            </nav>
+
+            <!-- Slides de História -->
+            <div class="center">
+                <div class="historia-container">
+                    <!-- Slide 1: Counter-Strike 1.6 -->
+                    <div class="historia-slide active" data-bg="imagens/cs16.webp"> 
+                        <div class="slide-content">
+                            <span class="ano">1999 - 2004</span>
+                            <h1>Counter-Strike 1.6</h1>
+                            <p>
+                                Tudo começou como um mod criado por Minh "Gooseman" Le e Jess Cliffe para Half-Life.
+                                Lançado oficialmente pela Valve em 2000, o Counter-Strike 1.6 revolucionou os jogos de tiro tático,
+                                estabelecendo o padrão para competições de eSports e criando uma das comunidades mais dedicadas da história dos games.
+                            </p>
+                            <p>
+                                Com mapas icônicos como Dust2, Inferno e Nuke, o 1.6 definiu a fórmula perfeita de estratégia,
+                                trabalho em equipe e habilidade individual que perdura até hoje.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Counter-Strike Source -->
+                    <div class="historia-slide" data-bg="imagens/cs-source.jpg">
+                        <div class="slide-content">
+                            <span class="ano">2004 - 2012</span>
+                            <h1>Counter-Strike: Source</h1>
+                            <p>
+                                Em 2004, a Valve lançou o Counter-Strike: Source, reconstruído na engine Source,
+                                trazendo física realista, gráficos melhorados e um visual completamente renovado.
+                                A transição dividiu a comunidade, com muitos profissionais permanecendo no 1.6.
+                            </p>
+                            <p>
+                                Apesar das controvérsias iniciais sobre as diferenças na mecânica de tiro e movimento,
+                                o CS:Source conquistou seu próprio público fiel e introduziu uma nova geração ao universo tático do Counter-Strike.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: CS:GO -->
+                    <div class="historia-slide" data-bg="imagens/csgo.avif">
+                        <div class="slide-content">
+                            <span class="ano">2012 - 2023</span>
+                            <h1>Counter-Strike: Global Offensive</h1>
+                            <p>
+                                Lançado em 2012, o CS:GO unificou a comunidade fragmentada e elevou o Counter-Strike
+                                ao status de maior eSport de tiro tático do mundo. Com matchmaking competitivo,
+                                sistema de economia de skins e Major Championships, o jogo alcançou milhões de jogadores.
+                            </p>
+                            <p>
+                                Durante seus 11 anos, o CS:GO recebeu inúmeras atualizações, novos mapas e operações,
+                                consolidando-se como um dos jogos mais jogados e assistidos globalmente, com prize pools milionários
+                                e lendas do cenário competitivo como s1mple, device e coldzera.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Counter-Strike 2 -->
+                    <div class="historia-slide" data-bg="imagens/cs2.webp">
+                        <div class="slide-content">
+                            <span class="ano">2023 - Presente</span>
+                            <h1>Counter-Strike 2</h1>
+                            <p>
+                                Em setembro de 2023, a Valve lançou o Counter-Strike 2, construído na engine Source 2.
+                                Uma evolução completa que trouxe gráficos de última geração, iluminação dinâmica,
+                                fumaças volumétricas realistas e tick rate melhorado para 128 subticks.
+                            </p>
+                            <p>
+                                Mantendo a essência que tornou o Counter-Strike lendário, o CS2 representa o futuro dos FPS competitivos,
+                                preservando toda a habilidade e estratégia que definem a série, enquanto introduz inovações técnicas
+                                que estabelecem um novo padrão para a próxima década de competições.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navegação (fora do container) -->
+                <div class="slide-nav">
+                    <button class="nav-btn prev" aria-label="Anterior">
+                        <span></span>
+                    </button>
+                    <div class="slide-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                    </div>
+                    <button class="nav-btn next" aria-label="Próximo">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo Dinâmico -->
+    <div class="cont2">
+        <!-- Cards de curiosidades que mudam conforme o slide -->
+        <section class="curiosidades-section">
+            <div class="curiosidade-card active" data-slide="0">
+                
+                <h3>O Nascimento de uma Lenda</h3>
+                <p>O Counter-Strike começou como um projeto universitário. Minh Le e Jess Cliffe nunca imaginaram que seu mod se tornaria um dos maiores fenômenos dos eSports mundiais.</p>
+            </div>
+
+            <div class="curiosidade-card" data-slide="1">
+                
+                <h3>A Engine Source</h3>
+                <p>O CS:Source foi o primeiro jogo a utilizar a revolucionária engine Source da Valve, trazendo física Havok que permitia objetos interativos e destruição ambiental limitada.</p>
+            </div>
+
+            <div class="curiosidade-card" data-slide="2">
+                
+                <h3>Era dos Majors</h3>
+                <p>CS:GO introduziu os Majors Championships com prize pools milionários. O primeiro Major foi o DreamHack Winter 2013, com premiação de $250.000 - hoje ultrapassa $1 milhão.</p>
+            </div>
+
+            <div class="curiosidade-card" data-slide="3">
+                
+                <h3>Nova Geração</h3>
+                <p>CS2 trouxe o sistema de subtick, eliminando a limitação de 64 ou 128 tick. Agora, cada ação é registrada no momento exato em que ocorre, revolucionando a precisão do jogo.</p>
+            </div>
+        </section>
+
+        <!-- Estatísticas -->
+        <section class="stats-section">
+            <h2 class="section-title">Counter-Strike em Números</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Anos de História</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1.5M+</div>
+                    <div class="stat-label">Jogadores Simultâneos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Países Competindo</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$100M+</div>
+                    <div class="stat-label">Em Premiações</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="cs2-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>CS<span>2</span> Zone</h2>
+                <p>O seu portal de tudo sobre Counter-Strike 2.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Guias</a></li>
+                    <li><a href="#">Mapas</a></li>
+                    <li><a href="#">Armas</a></li>
+                    <li><a href="#">Atualizações</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Twitch</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Autor</h3>
+                <p>Henrique Zoe Carvalho Hsu</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="menu-hamburger.js" defer></script>
+    <script src="historia-slides.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

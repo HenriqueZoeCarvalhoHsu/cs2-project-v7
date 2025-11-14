@@ -1,0 +1,227 @@
+.mecanica {
+    width: 100%;
+    background-color: rgba(51, 50, 50, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+/* Card individual */
+.mecanica a {
+    width: 90%;
+    height: 50vh;
+    margin: 30px 0;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.55);
+}
+
+/* Imagem */
+.mecanica a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+/* Overlay com gradiente */
+.mecanica a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 153, 1, 0.188), rgba(0, 0, 0, 0.4));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+    border-radius: 12px;
+}
+
+/* Efeito hover: levanta e adiciona brilho */
+.mecanica a:hover {
+    transform: translateY(-20px);
+    box-shadow: 20px 4px 20px rgba(255, 177, 61, 0.564),
+                0 0 40px rgba(255, 155, 1, 0.3);
+}
+
+/* Overlay aparece no hover */
+.mecanica a:hover::before {
+    opacity: 1;
+}
+
+/* Bloco de texto dentro da imagem */
+.mecanica-texto {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Título (h3) dentro da imagem */
+.mecanica a h3 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'cs2v1', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 
+        0 0 15px rgba(255, 153, 1, 0.7),
+        0 0 25px rgba(255, 153, 1, 0.5),
+        0 2px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
+}
+
+/* Descrição (p) dentro da imagem */
+.mecanica a p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.85;
+    max-width: 70%;
+    line-height: 1.3;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Efeitos no hover */
+.mecanica a:hover h3 {
+    transform: translateY(-3px);
+    text-shadow:
+        0 0 25px rgba(255, 180, 80, 1),
+        0 0 40px rgba(255, 153, 1, 0.8);
+}
+
+.mecanica a:hover p {
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+/* Título principal da seção */
+.cont2 h2 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(255, 155, 1, 0.5),
+                 0 0 40px rgba(255, 155, 1, 0.3);
+    font-family: 'cs2v1', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+/* ========================= */
+/*     RESPONSIVIDADE        */
+/* ========================= */
+
+
+/* ---- Telas até 1024px (tablet) ---- */
+@media (max-width: 1024px) {
+
+    .mecanica a {
+        height: 40vh;
+        width: 95%;
+    }
+
+    .mecanica a h3 {
+        font-size: 2rem;
+    }
+
+    .mecanica a p {
+        font-size: 1rem;
+        max-width: 80%;
+    }
+
+}
+
+
+/* ---- Telas até 768px (celular grande) ---- */
+@media (max-width: 768px) {
+
+    .cont2 h2 {
+        font-size: 38px;
+        margin-top: 20px;
+    }
+
+    .mecanica {
+        gap: 10px;
+    }
+
+    .mecanica a {
+        width: 100%;
+        height: 35vh;
+        margin: 20px 0;
+    }
+
+    .mecanica-texto {
+        bottom: 20px;
+        left: 25px;
+    }
+
+    .mecanica a h3 {
+        font-size: 1.8rem;
+    }
+
+    .mecanica a p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ---- Telas pequenas até 480px (celular comum) ---- */
+@media (max-width: 480px) {
+
+    /* Ajuste dos títulos do site */
+    .cont2 h2 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .mecanica a {
+        height: 30vh;
+        margin: 15px 0;
+    }
+
+    .mecanica-texto {
+        bottom: 15px;
+        left: 20px;
+        gap: 5px;
+    }
+
+    .mecanica a h3 {
+        font-size: 1.5rem;
+    }
+
+    .mecanica a p {
+        font-size: 0.85rem;
+        max-width: 85%;
+        line-height: 1.2;
+    }
+
+    /* Hero responsivo */
+    .center h1 {
+        font-size: 36px;
+    }
+
+    .center p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 10px 22px;
+        font-size: 16px;
+    }
+
+    /* Navbar */
+    #navbar img {
+        width: 120px;
+    }
+}

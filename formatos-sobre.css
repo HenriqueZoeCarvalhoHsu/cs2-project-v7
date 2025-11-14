@@ -1,0 +1,643 @@
+/* =========================================
+   PÁGINA SOBRE O JOGO - ESTILOS ESPECÍFICOS
+========================================= */
+
+.hero-subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 10px;
+}
+
+/* =========================================
+   SEÇÃO OVERVIEW
+========================================= */
+.overview-section {
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 80px;
+}
+
+.overview-card {
+    background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.95));
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 155, 1, 0.15);
+    text-align: center;
+}
+
+.overview-icon {
+    font-size: 72px;
+    margin-bottom: 25px;
+    display: inline-block;
+    filter: drop-shadow(0 5px 15px rgba(255, 155, 1, 0.3));
+}
+
+.overview-card h2 {
+    font-size: 42px;
+    font-family: 'cs2v1', sans-serif;
+    color: #FF9B01;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 15px rgba(255, 155, 1, 0.4);
+}
+
+.overview-card p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overview-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   SEÇÃO DE GAMEPLAY
+========================================= */
+.gameplay-section {
+    width: 90%;
+    max-width: 1400px;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    color: #FF9B01;
+    font-family: 'cs2v1', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+    text-shadow: 0 2px 15px rgba(255, 155, 1, 0.4);
+}
+
+/* Blocos de Gameplay */
+.gameplay-block {
+    background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.95));
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    transition: all 0.4s ease;
+}
+
+.gameplay-block:hover {
+    border-color: rgba(255, 155, 1, 0.5);
+    box-shadow: 0 20px 60px rgba(255, 155, 1, 0.2);
+}
+
+.block-header {
+    background: linear-gradient(135deg, rgba(255, 155, 1, 0.15), rgba(255, 193, 7, 0.1));
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid rgba(255, 155, 1, 0.2);
+}
+
+.block-icon {
+    font-size: 42px;
+}
+
+.block-header h3 {
+    font-size: 32px;
+    font-family: 'cs2v1', sans-serif;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.block-content {
+    padding: 40px;
+}
+
+/* Modos de Jogo */
+.mode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.mode-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 155, 1, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.mode-card:hover {
+    background: rgba(255, 155, 1, 0.08);
+    border-color: #FF9B01;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 155, 1, 0.2);
+}
+
+.mode-card h4 {
+    font-size: 22px;
+    font-family: 'cs2v1', sans-serif;
+    color: #FF9B01;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.mode-format {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.mode-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+/* Objetivos das Equipes */
+.teams-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.team-objectives {
+    border-radius: 15px;
+    padding: 30px;
+    border: 2px solid;
+}
+
+.tr-team {
+    background: linear-gradient(135deg, rgba(226, 162, 74, 0.1), rgba(189, 135, 53, 0.05));
+    border-color: rgba(226, 162, 74, 0.3);
+}
+
+.ct-team {
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(53, 122, 189, 0.05));
+    border-color: rgba(74, 144, 226, 0.3);
+}
+
+.team-badge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-icon {
+    font-size: 36px;
+}
+
+.team-badge h4 {
+    font-size: 26px;
+    font-family: 'cs2v1', sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tr-team .team-badge h4 {
+    color: #E2A24A;
+}
+
+.ct-team .team-badge h4 {
+    color: #4A90E2;
+}
+
+.objectives-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.objectives-list li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.objectives-list li:last-child {
+    border-bottom: none;
+}
+
+.objectives-list strong {
+    font-weight: 700;
+}
+
+.tr-team .objectives-list strong {
+    color: #E2A24A;
+}
+
+.ct-team .objectives-list strong {
+    color: #4A90E2;
+}
+
+/* Sistema de Rounds */
+.rounds-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.round-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(255, 155, 1, 0.08);
+    border: 2px solid rgba(255, 155, 1, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.round-item:hover {
+    background: rgba(255, 155, 1, 0.15);
+    border-color: #FF9B01;
+    transform: translateY(-5px);
+}
+
+.round-number {
+    font-size: 48px;
+    font-family: 'cs2v1', sans-serif;
+    font-weight: 900;
+    color: #FF9B01;
+    margin-bottom: 10px;
+}
+
+.round-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+.victory-conditions h4 {
+    font-size: 20px;
+    color: #FF9B01;
+    font-family: 'cs2v1', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.condition-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.tr-bg {
+    background: linear-gradient(135deg, rgba(226, 162, 74, 0.1), rgba(189, 135, 53, 0.05));
+    border-color: rgba(226, 162, 74, 0.3);
+}
+
+.ct-bg {
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(53, 122, 189, 0.05));
+    border-color: rgba(74, 144, 226, 0.3);
+}
+
+.condition-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.condition-item p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* =========================================
+   SEÇÃO DE ECONOMIA
+========================================= */
+.economy-section {
+    width: 90%;
+    max-width: 1400px;
+    margin-bottom: 80px;
+}
+
+.economy-intro {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.economy-intro p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.economy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.economy-card {
+    background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.95));
+    border: 2px solid rgba(255, 155, 1, 0.2);
+    border-radius: 20px;
+    padding: 35px;
+    transition: all 0.3s ease;
+}
+
+.economy-card:hover {
+    border-color: #FF9B01;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 155, 1, 0.2);
+}
+
+.economy-card h3 {
+    font-size: 24px;
+    font-family: 'cs2v1', sans-serif;
+    color: #FF9B01;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.economy-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.economy-card li {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.economy-card li:last-child {
+    border-bottom: none;
+}
+
+.economy-card strong {
+    color: #FF9B01;
+    font-weight: 700;
+}
+
+/* =========================================
+   SEÇÃO DE MECÂNICAS
+========================================= */
+.mechanics-section {
+    width: 90%;
+    max-width: 1400px;
+    margin-bottom: 80px;
+}
+
+.mechanics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.mechanic-card {
+    background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.95));
+    border: 2px solid rgba(255, 155, 1, 0.15);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.mechanic-card:hover {
+    border-color: #FF9B01;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255, 155, 1, 0.25);
+}
+
+.mechanic-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mechanic-card h3 {
+    font-size: 22px;
+    font-family: 'cs2v1', sans-serif;
+    color: #FF9B01;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.mechanic-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+/* =========================================
+   SEÇÃO POR QUE JOGAR
+========================================= */
+.why-section {
+    width: 90%;
+    max-width: 1400px;
+    margin-bottom: 60px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.why-card {
+    background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.95));
+    border: 2px solid rgba(255, 155, 1, 0.15);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    border-color: #FF9B01;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255, 155, 1, 0.25);
+}
+
+.why-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.why-card h3 {
+    font-size: 20px;
+    font-family: 'cs2v1', sans-serif;
+    color: #FF9B01;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.why-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+@media screen and (max-width: 1024px) {
+    .overview-card {
+        padding: 40px 30px;
+    }
+
+    .overview-icon {
+        font-size: 64px;
+    }
+
+    .overview-card h2 {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .block-header {
+        padding: 25px 30px;
+    }
+
+    .block-content {
+        padding: 30px;
+    }
+
+    .teams-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .overview-card {
+        padding: 30px 25px;
+    }
+
+    .overview-icon {
+        font-size: 56px;
+    }
+
+    .overview-card h2 {
+        font-size: 32px;
+    }
+
+    .overview-card p {
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .block-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .block-icon {
+        font-size: 36px;
+    }
+
+    .block-header h3 {
+        font-size: 28px;
+    }
+
+    .block-content {
+        padding: 25px;
+    }
+
+    .mode-grid,
+    .economy-grid,
+    .mechanics-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rounds-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .conditions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .overview-card {
+        padding: 25px 20px;
+    }
+
+    .overview-icon {
+        font-size: 48px;
+    }
+
+    .overview-card h2 {
+        font-size: 28px;
+    }
+
+    .overview-card p {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .block-header {
+        padding: 20px 15px;
+    }
+
+    .block-icon {
+        font-size: 32px;
+    }
+
+    .block-header h3 {
+        font-size: 24px;
+    }
+
+    .block-content {
+        padding: 20px;
+    }
+
+    .mode-card,
+    .economy-card,
+    .mechanic-card,
+    .why-card {
+        padding: 25px 20px;
+    }
+
+    .round-number {
+        font-size: 40px;
+    }
+
+    .rounds-info {
+        grid-template-columns: 1fr;
+    }
+}
